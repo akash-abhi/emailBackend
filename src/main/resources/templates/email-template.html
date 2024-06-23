@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Email Template</title>
+<style>
+    /* CSS styles for your email template */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+    }
+    .header {
+      background-color: #E9E9E9;
+      padding: 10px;
+      text-align: center;
+    }
+    .content {
+      padding: 20px;
+    }
+    .footer {
+      background-color: #E9E9E9;
+      padding: 10px;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+<img src="https://sightsinplus.com/wp-content/uploads/2022/03/Cognizant-announces-new-logo-and-tagline.jpg" style="width:750px; height:100px">
+</div>
+<div class="content">
+<h2>Hello</h2>
+<p th:text="${message}">Default message</p>
+<p>Please Update your RTO-Tracker before EOD today.</p>
+<p>Thank You.</p>
+<a href="https://www.example.com">File Path</a>
+</div>
